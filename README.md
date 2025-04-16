@@ -50,10 +50,8 @@ gulp build
 
 📷 Preview
 
-![Screenshot dark mode](https://raw.githubusercontent.com/karcwork/karc-dev-portfolio/main/src/img/preview-dark.png)
-![Screenshot light mode](https://raw.githubusercontent.com/karcwork/karc-dev-portfolio/main/src/img/preview-light.png)
-
-
+![Screenshot dark mode](preview-dark.png)
+![Screenshot light mode](preview-light.png)
 
 📬 Contact
 If you'd like to collaborate or just connect:
