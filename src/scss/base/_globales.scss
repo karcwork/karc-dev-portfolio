@@ -1,0 +1,137 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$secondary_font;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: v.$white;
+    font-size: 2rem;
+    background-color: v.$m-bg;
+    cursor: cell;
+
+    &.overflow-hidden {
+        overflow: hidden;
+        /* Crea problemas con el nav bar en Celular 
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        */
+    }
+
+}
+
+p {
+    line-height: 1.5;
+}
+
+.main-container {
+    width: 95%;
+    max-width: 130rem;
+    margin: 0 auto;
+
+    @include m.Jphone {
+        width: 90%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: v.$white;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 5rem 0;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4.6rem;
+}
+
+h3 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body>section {
+    padding: 10rem 0
+}
+
+.modal {
+    z-index: 2;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(v.$black, 0.5);
+    backdrop-filter: contrast(90%) grayscale(20%) brightness(50%) blur(5px);
+    animation: fadeIn ease-in 0.2s;
+
+    &.fade-out {
+        animation: fadeOut ease-in 0.5s;
+
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*
+::-webkit-scrollbar {
+    width: 1.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(204, 32, 175);
+    border-radius: 1.2rem;
+    border: 3px solid #121212;
+}
+    */

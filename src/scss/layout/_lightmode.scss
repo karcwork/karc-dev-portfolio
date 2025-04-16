@@ -1,0 +1,131 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+body {
+    &.light-mode {
+        background-color: v.$lm-bg;
+        color: v.$m-bg;
+
+        .hero__bgColor {
+            color: v.$white;
+        }
+
+        .hero__bgColor svg path {
+            fill: v.$lm-bg;
+        }
+
+        span {
+            color: #83c5be;
+        }
+
+        .proyects-section {
+            background-color: #cdcdcd;
+        }
+
+        .custom-shape-divider-bottom-1741652240 .shape-fill,
+        .custom-shape-divider-top-1742184684 .shape-fill {
+            fill: #cdcdcd;
+        }
+
+        .header__title:hover {
+            color: #00383d;
+        }
+
+        @include m.tablet {
+
+            .main__nav a:hover,
+            .active:not(:nth-of-type(3)) {
+                font-weight: 700;
+                color: v.$m-bg !important;
+            }
+
+            .main__nav a::after {
+                background: v.$m-bg;
+            }
+
+            .nav-link::before {
+                color: rgb(13, 10, 32, 0.4);
+            }
+        }
+
+        .custom-shape-divider-bottom-1742183805 .shape-fill {
+            fill: #d2d29a;
+        }
+
+        .form {
+
+
+            .wrapper li:nth-child(1) .input,
+            .wrapper li:nth-child(1)::after,
+            .wrapper li:nth-child(1)::before {
+                background-color: #d6f5d6; // verde muy claro
+            }
+
+            .wrapper li:nth-child(2) .input,
+            .wrapper li:nth-child(2)::after,
+            .wrapper li:nth-child(2)::before {
+                background-color: #b6eac7; // verde pastel
+            }
+
+            .wrapper li:nth-child(3) .input,
+            .wrapper li:nth-child(3)::after,
+            .wrapper li:nth-child(3)::before {
+                background-color: #86ddb0; // verde agua
+            }
+
+            .wrapper li:nth-child(4) .input,
+            .wrapper li:nth-child(4)::after,
+            .wrapper li:nth-child(4)::before {
+                background-color: #65d4a4; // verde más vivo
+            }
+
+            .wrapper li:nth-child(1) .input:focus {
+                border: 3.5px solid #d6f5d6;
+            }
+
+            .wrapper li:nth-child(2) .input:focus {
+                border: 3.5px solid #b6eac7;
+            }
+
+            .wrapper li:nth-child(3) .input:focus {
+                border: 3.5px solid #86ddb0;
+            }
+
+            .wrapper li:nth-child(4) .input:focus {
+                border: 3.5px solid #65d4a4;
+            }
+
+            .wrapper li:hover,
+            .wrapper button:hover {
+                transform: translateX(-40px);
+            }
+
+            .wrapper button,
+            .wrapper button::before,
+            .wrapper button::after {
+                background-color: #4ec68f; // botón base
+            }
+
+            .wrapper button:hover,
+            .wrapper button:hover::before,
+            .wrapper button:hover::after {
+                background-color: #34b47a; // botón hover
+            }
+
+            .wrapper li:after,
+            .form button:after {
+                background-color: #34b47a;
+            }
+
+        }
+
+        .footer {
+            background-color: #d2d29a;
+
+            .button:hover {
+                background-color: #00383d;
+            }
+        }
+    }
+}

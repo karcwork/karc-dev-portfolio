@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta básicos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Karc Dev | Web developer portfolio showcasing modern web experiences, animations, and custom-built projects." />
+    <meta name="keywords"
+        content="Karc Dev, web development, frontend, portfolio, GSAP, JavaScript, developer, UX, UI" />
+    <meta name="author" content="Karc Dev" />
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="Karc Dev Portfolio" />
+    <meta property="og:description" content="Explore Karc Dev's projects and creative digital experiences." />
+    <meta property="og:image" content="https://karc-dev-portfolio.netlify.app/src/img/logo/png/code.png" />
+    <meta property="og:url" content="https://karc-dev-portfolio.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Karc Dev Portfolio" />
+    <meta name="twitter:description" content="Explore Karc Dev's projects and creative digital experiences." />
+    <meta name="twitter:image" content="https://karc-dev-portfolio.netlify.app/src/img/logo/png/code.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="src/img/logo/png/code.png" type="image/png" sizes="32x32" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="build/css/app.css" />
+
+    <!-- Title -->
+    <title>Karc Dev</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="header__content">
+
+            <a href="#">
+                <h1 class="header__title">Karc<span>Dev</span> </h1>
+            </a>
+
+            <!-- From Uiverse.io by Jason21403019 -->
+            <div class="hamburgers">
+                <label class="hamburger">
+                    <input class="overflow-btn" type="checkbox" />
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+            </div>
+
+
+            <nav class="main__nav">
+                <a href="#about" class="nav-link" data-content="About">About</a>
+                <a href="#proyects" class="nav-link" data-content="Proyects">Proyects</a>
+                <a href="#" class="nav-link" data-content="Blog">Blog</a>
+                <a href="#contact" class="nav-link" data-content="Contact Me">Contact Me</a>
+                <!-- From Uiverse.io by KSAplay -->
+                <label class="container">
+                    <input class="lightMode-btn" checked="checked" type="checkbox" />
+                    <div class="checkmark"></div>
+                    <div class="torch">
+                        <div class="head">
+                            <div class="face top">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="face left">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="face right">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="stick">
+                            <div class="side side-left">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="side side-right">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero__bgColor">
+            <div class="hero">
+                <div class="hero__title-div">
+                    <h2 class="hero__title">Karc <span>Dev</span></h2>
+                    <div class="button">
+                        <div class="box">H</div>
+                        <div class="box">E</div>
+                        <div class="box">L</div>
+                        <div class="box">L</div>
+                        <div class="box">O</div>
+                    </div>
+                </div>
+                <p class="hero__text">Development, deployment and maintenance of your website, start to finish.
+                </p>
+            </div>
+
+            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M-0.00,49.85 C150.00,149.60 271.37,-49.85 500.00,49.85 L500.00,-0.00 L-0.00,-0.00 Z">
+                    </path>
+                    </path>
+                </svg></div>
+        </section>
+
+        <section class="info-section main-container" id="about">
+            <div class="info-section__text">
+                <h3>Front-end Web <span>Dev</span>eloper</h3>
+                <p> Today, I focus on building dynamic interfaces using
+                    HTML, CSS, and JavaScript, enhanced by tools like Sass for efficient styling, npm for package
+                    management, and Node.js for workflow automation, integrating PHP when projects require
+                    custom backend solutions.</p>
+            </div>
+
+            <div class="info-section__svg">
+                <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="width: 600px; height: 600px;">
+                    <path class="fillCls4"
+                        d="M125.945 99.3173C125.945 99.3173 132.091 120.06 124.217 125.438C116.465 130.733 108.852 114.106 108.852 114.106L125.945 99.3173Z"
+                        fill="#DEF4FF" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls2"
+                        d="M87.5339 44.9635C87.5339 44.9635 86.1894 54.5666 89.0704 55.9111C91.9513 57.2555 98.6735 58.2158 98.6735 58.2158L84.6529 76.8459L68.5196 62.8253L65.0625 56.1031C65.0625 56.1031 70.8244 55.527 71.4006 48.0365C71.9768 40.546 71.0165 32.8635 71.0165 32.8635L86.3815 37.8572L87.5339 44.9635Z"
+                        fill="#FBD482" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls1"
+                        d="M93.4877 19.9953C93.4877 19.9953 96.9449 40.354 93.4877 47.0762C93.4877 47.0762 92.1433 48.9968 89.2623 49.573C86.3814 50.1492 76.3941 47.4603 73.8973 40.9302C71.4005 34.4 71.9767 35.9365 71.9767 35.9365C71.9767 35.9365 64.8704 38.4334 65.0624 31.5191C65.2545 24.6048 70.0561 26.7175 70.0561 26.7175L76.7783 15.3858L88.11 14.6176L93.4877 19.9953Z"
+                        fill="#FFDE99" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls3"
+                        d="M77.9308 18.8429C77.9308 18.8429 75.0499 31.327 71.5928 29.4064C68.1356 27.4857 66.8565 25.9819 65.5754 28.5575C65.5754 28.5575 60.069 28.8302 61.4134 22.8762C61.4134 22.8762 53.7309 16.7302 62.5658 7.5112C71.4007 -1.70782 71.7848 10.2001 78.507 8.66357C85.2292 7.12707 88.3022 -1.13164 91.7594 3.28581C95.2165 7.70326 94.0641 6.16676 94.0641 6.16676C94.0641 6.16676 100.21 4.82232 98.6736 12.5048C97.1371 20.1873 91.5673 24.7969 86.3816 22.108C81.1959 19.4191 77.9308 18.8429 77.9308 18.8429Z"
+                        fill="#0144B9" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls4"
+                        d="M65.8299 55.938C65.8299 55.938 51.6172 56.2952 44.3188 62.8254C37.0205 69.3555 10.3237 126.974 21.8475 134.273C33.3713 141.571 54.1141 130.239 54.1141 130.239L53.3458 141.571C53.3458 141.571 82.5394 151.174 104.819 144.836L110.388 117.179L113.077 106.616L118.839 69.9317C118.839 69.9317 114.422 60.1365 106.547 59.1762C98.6727 58.2159 95.2155 57.2555 95.2155 57.2555C95.2155 57.2555 85.2052 71.8831 75.241 66.4746C68.5188 62.8254 65.8299 55.938 65.8299 55.938Z"
+                        fill="#DEF4FF" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls5"
+                        d="M57.1874 109.113C57.1874 109.113 47.9684 109.305 38.9415 111.417L42.5907 109.881C42.5907 109.881 38.9415 111.417 37.2129 110.841C37.2129 110.841 44.8954 110.073 48.3525 103.159C51.8097 96.2443 54.4986 80.6872 54.4986 80.6872C54.4986 80.6872 73.5128 84.5285 75.0493 101.43C76.5858 118.332 57.1874 109.113 57.1874 109.113Z"
+                        fill="#C6E5F4" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls5"
+                        d="M89.6456 116.603C89.2615 116.603 83.3075 106.616 83.3075 106.616L75.4329 102.774L64.4854 119.292C60.26 125.822 54.114 130.239 54.114 130.239L53.3457 141.571C53.3457 141.571 58.0416 143.19 65.1172 144.66C66.4751 132.131 81.771 123.133 81.771 123.133C81.771 123.133 90.0297 116.603 89.6456 116.603Z"
+                        fill="#C6E5F4" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls1"
+                        d="M57.571 109.112C57.571 109.112 54.9301 117.815 64.4853 119.292L67.3662 115.258C67.3662 115.258 76.2011 113.338 76.5852 108.344C76.5852 108.344 82.1551 114.49 83.6916 113.722L84.6519 108.853C84.6519 108.853 77.2498 96.9933 76.2011 96.2442C74.8567 95.2839 68.9027 99.8934 68.9027 99.8934L57.571 109.112Z"
+                        fill="#FFDE99" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <circle class="fillCls9 browsing13-blob12" cx="105.542" cy="76.7171" r="1.1082" fill="#7885CC"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls9 browsing13-blob11" cx="107.282" cy="72.065" r="0.743272" fill="#7885CC"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls9 browsing13-blob10" cx="106.664" cy="75.5027" r="2.37676" fill="#7885CC"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls9 browsing13-blob9" cx="107.316" cy="75.3134" r="1.84904" fill="#7885CC"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls9 browsing13-blob8" cx="106.865" cy="77.0599" r="2.43104" fill="#7885CC"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls8 browsing13-blob7" cx="106.427" cy="74.4839" r="2.42922" fill="#CC7E78"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls8 browsing13-blob6" cx="107.784" cy="76.4722" r="2.3975" fill="#CC7E78"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls8 browsing13-blob5" cx="105.695" cy="74.8809" r="2.12848" fill="#CC7E78"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls8 browsing13-blob4" cx="105.974" cy="73.0521" r="2.05206" fill="#CC7E78"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls8 browsing13-blob3" cx="105.866" cy="75.796" r="2.86585" fill="#CC7E78"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls8 browsing13-blob2" cx="106.746" cy="74.9741" r="2.6382" fill="#CC7E78"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <circle class="fillCls8 browsing13-blob1" cx="106.485" cy="75.9797" r="2.62517" fill="#CC7E78"
+                        stroke-width="2px" style="animation-duration: 4.5s;"></circle>
+                    <path class="fillCls6"
+                        d="M129.373 66.8589H88.8442C87.6054 66.8589 86.5088 67.6598 86.1323 68.841L70.3486 118.299C69.9184 119.645 70.9228 121.021 72.3364 121.021H111.957C113.196 121.021 114.293 120.22 114.669 119.039L130.729 68.7142C131.023 67.7981 130.338 66.8589 129.373 66.8589Z"
+                        fill="#241921" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls1"
+                        d="M122.251 95.839L117.753 100.255C117.753 100.255 110.491 106.495 108.117 107.628C108.117 107.628 107.942 111.187 110.875 109.547L108.812 111.584C108.812 111.584 108.311 112.587 111.052 113.144L110.747 114.202C110.747 114.202 110.506 115.427 112.45 115.595C112.494 115.598 112.506 115.66 112.464 115.679L112.821 117.133C112.821 117.133 111.793 118.063 117.523 117.632L125.019 113.901L126.582 111.123L126.73 108.098L128.311 104.966L127.738 102.085L129.78 96.8358L127.794 93.7071C127.794 93.7071 127.416 86.9119 128.791 84.3037C128.791 84.3037 125.482 82.7134 124.185 87.2864C122.891 91.8594 122.785 93.9933 122.785 93.9933L122.251 95.839Z"
+                        fill="#FFDE99" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                    <path class="fillCls7"
+                        d="M104.942 89.7141H101.06L98.1523 93.0752L99.1261 96.4363H103.008L105.916 93.0752L104.942 89.7141Z"
+                        fill="#FFD3F5" stroke-width="2px" style="animation-duration: 4.5s;"></path>
+                </svg>
+            </div>
+        </section>
+
+        <div class="custom-shape-divider-bottom-1741652240">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <section class="proyects-section" id="proyects">
+            <h3>My Proyects</h3>
+
+            <div class="proyects-section__flex main-container">
+                <div class="proyects">
+
+                    <div class="proyect">
+                        <div class="proyect__image-box">
+                            <picture>
+                                <source srcset="build/img/gallery/full/immersive.avif" type="image/avif">
+                                <source srcset="build/img/gallery/full/immersive.webp" type="image/webp">
+                                <img src="build/img/gallery/full/immersive.png"
+                                    alt="Imagen de bienes-raices-karc-frontend.com" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="proyect__content">
+                            <a target="_blank" href="https://immersiveexpp.com/">
+                                <h4>Interactive Digital Experience</h4>
+                                <p>Leveraging GSAP animations, multimedia optimization, SSR, a responsive carousel, and
+                                    automated QR ticket emails.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="proyect">
+                        <div class="proyect__image-box">
+                            <picture>
+                                <source srcset="build/img/gallery/full/sacalaMezclaWeb.avif" type="image/avif">
+                                <source srcset="build/img/gallery/full/sacalaMezclaWeb.webp" type="image/webp">
+                                <img src="build/img/gallery/full/sacalaMezclaWeb.png" alt="Imagen de sacalaMezcla.com"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="proyect__content">
+                            <a target="_blank" href="https://sacalamezcla.com/">
+                                <h4>House/Techno Events</h4>
+                                <p>Website linked to a payment gateway to purchase tickets,
+                                    generate the QR code (tokens) and the scanner for entry.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="proyect">
+                        <div class="proyect__image-box">
+                            <picture>
+                                <source srcset="build/img/gallery/full/bookfest.avif" type="image/avif">
+                                <source srcset="build/img/gallery/full/bookfest.webp" type="image/webp">
+                                <img src="build/img/gallery/full/bookfest.png" alt="Imagen de BookFest KarcDev"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="proyect__content">
+                            <a target="_blank" href="https://book-fest-karcdev.netlify.app/">
+                                <h4>Blog/Courses Template</h4>
+                                <p>Simple 2D page for informational and customer contact purposes.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="proyect">
+                        <div class="proyect__image-box">
+                            <picture>
+                                <source srcset="build/img/gallery/full/to-dolist.avif" type="image/avif">
+                                <source srcset="build/img/gallery/full/to-dolist.webp" type="image/webp">
+                                <img src="build/img/gallery/full/to-dolist.png" alt="Imagen de to-dolist app"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="proyect__content">
+                            <a target="_blank" href="https://to-dolist-karcdev.netlify.app/">
+                                <h4>To-Do List App</h4>
+                                <p>Task management page with user interactivity, color selection, and duplicate
+                                    avoidance logic.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!-- .proyects -->
+            </div> <!-- .proyects-section__flex -->
+
+
+
+        </section>
+
+        <div class="custom-shape-divider-top-1742184684">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <section class="form-section" id="contact">
+            <div class="form__container">
+                <h4 class="form__title">Share your vision</h4>
+                <form id="contact-form" class="form">
+                    <ul class="wrapper">
+                        <li style="--i:4;">
+                            <input class="input" type="text" name="name" placeholder="Name" required>
+                        </li>
+                        <li style="--i:3;">
+                            <input class="input" type="text" name="phone" placeholder="Phone number" required>
+                        </li>
+                        <li style="--i:2;">
+                            <input class="input" type="email" name="email" placeholder="E-mail" required>
+                        </li>
+                        <li style="--i:1;">
+                            <textarea class="input" name="message" placeholder="Message" required></textarea>
+                        </li>
+                        <li style="--i:0;">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+        </section>
+
+        <div class="custom-shape-divider-bottom-1742183805">
+            <svg class="footer__svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <footer class="footer">
+            <div class="tooltip-container">
+                <span style="color: black; text-align: center;" class="tooltip">Follow Me!</span>
+                <span class="text">!</span>
+            </div>
+
+
+
+            <!-- From Uiverse.io by svqantonio -->
+            <div class="main">
+                <div class="up">
+                    <button class="card1">
+                        <svg class="instagram" fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none"
+                                font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10"
+                                stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none"
+                                fill-rule="nonzero">
+                                <g transform="scale(8,8)">
+                                    <path
+                                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="card2">
+                        <svg class="github" height="30px" width="30px" viewBox="0 0 30 30"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="down">
+                    <button class="card3">
+                        <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            class="whatsapp">
+                            <path
+                                d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.45 1.321 4.956L2 22l5.255-1.377a9.916 9.916 0 0 0 4.737 1.206h.005c5.46 0 9.908-4.448 9.913-9.913A9.872 9.872 0 0 0 19 4.908h.001ZM11.992 20.15A8.216 8.216 0 0 1 7.797 19l-.3-.18-3.117.818.833-3.041-.196-.314a8.2 8.2 0 0 1-1.258-4.381c0-4.533 3.696-8.23 8.239-8.23a8.2 8.2 0 0 1 5.825 2.413 8.196 8.196 0 0 1 2.41 5.825c-.006 4.55-3.702 8.24-8.24 8.24Zm4.52-6.167c-.247-.124-1.463-.723-1.692-.808-.228-.08-.394-.123-.556.124-.166.246-.641.808-.784.969-.143.166-.29.185-.537.062-.247-.125-1.045-.385-1.99-1.23-.738-.657-1.232-1.47-1.38-1.716-.142-.247-.013-.38.11-.504.11-.11.247-.29.37-.432.126-.143.167-.248.248-.413.082-.167.043-.31-.018-.433-.063-.124-.557-1.345-.765-1.838-.2-.486-.404-.419-.557-.425-.142-.009-.309-.009-.475-.009a.911.911 0 0 0-.661.31c-.228.247-.864.845-.864 2.067 0 1.22.888 2.395 1.013 2.56.122.167 1.742 2.666 4.229 3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="card4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24"
+                            class="gmail" width="24">
+                            <path
+                                d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <button class="button footer__button">
+                <svg class="svgIcon" viewBox="0 0 384 512">
+                    <path
+                        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                    </path>
+                </svg>
+            </button>
+
+        </footer>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-div"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>gsap.registerPlugin(ScrollTrigger);</script>
+    <script src="build/js/app.js"></script>
+    <script>
+        // HERO
+        gsap.from(".hero__title-div", {
+            scrollTrigger: {
+                trigger: ".hero__title-div",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            opacity: 0,
+            y: -50,
+            duration: 1.5,
+            ease: "power3.out"
+        });
+
+        gsap.from(".hero__text", {
+            scrollTrigger: {
+                trigger: ".hero__text",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            opacity: 0,
+            y: 30,
+            duration: 1.5,
+            delay: 0.2,
+            ease: "power2.out"
+        });
+
+        // INFO SECTION
+        gsap.from(".info-section__text h3", {
+            scrollTrigger: {
+                trigger: ".info-section__text h3",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            opacity: 0,
+            x: -100,
+            duration: 1.3
+        });
+
+        gsap.from(".info-section__text p", {
+            scrollTrigger: {
+                trigger: ".info-section__text p",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            opacity: 0,
+            x: -50,
+            duration: 1.2,
+            delay: 0.2
+        });
+
+        // PROYECTOS
+        gsap.from(".proyect", {
+            scrollTrigger: {
+                trigger: ".proyects",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            opacity: 0,
+            //    y: 60,
+            duration: 2.5,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
+
+        // FORMULARIO
+        gsap.from(".form__title", {
+            scrollTrigger: {
+                trigger: ".form-section",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            opacity: 0,
+            y: -40,
+            duration: 1.5
+        });
+
+        gsap.from(".wrapper", {
+            scrollTrigger: {
+                trigger: ".form-section",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            autoAlpha: 0,
+            y: 40,
+            duration: 2,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
+
+        gsap.from(".wrapper li", {
+            scrollTrigger: {
+                trigger: ".form-section",
+                start: "top 90%",
+                toggleActions: "play reverse play reverse"
+            },
+            autoAlpha: 0.97,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
+
+        gsap.from(".footer .main", {
+            scrollTrigger: {
+                trigger: ".footer",
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            },
+            opacity: 0,
+            y: 20,
+            duration: 1.5,
+            delay: .2,
+            ease: "power2.out"
+        });
+
+        gsap.from(".footer .button", {
+            scrollTrigger: {
+                trigger: ".footer",
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            },
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: "power2.out"
+        });
+
+        gsap.from(".footer .tooltip-container", {
+            scrollTrigger: {
+                trigger: ".footer",
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            },
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: "power2.out"
+        });
+    </script>
+
+
+    <script>
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://formspree.io/f/mkgjylab', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                });
+
+                if (response.ok) {
+                    window.location.href = '/thanks.html';
+                } else {
+                    const data = await response.json();
+                    console.error(data);
+                    alert('Error submitting form. Please try again later.');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('An error occurred while submitting the form.');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

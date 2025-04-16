@@ -1,0 +1,303 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.custom-shape-divider-top-1742184684 {
+  transform: rotateY(180deg);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1742184684 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-top-1742184684 .shape-fill {
+  fill: #1A1740;
+}
+
+.form-section {
+  height: 20rem;
+  padding: 5rem 10rem 10rem 10rem;
+  position: relative;
+  top: -40rem;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+
+  @include m.tablet {
+    gap: 10rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @include m.desktop {
+    gap: 20rem;
+  }
+}
+
+
+.form__title {
+  margin: 0;
+  text-align: center;
+  font-size: 4.5rem;
+
+  @include m.Jphone {
+    margin-bottom: 10rem;
+  }
+
+  @include m.tablet {
+    order: 2;
+    flex: 1;
+  }
+}
+
+
+
+
+// Animation
+/* From Uiverse.io by andrew-demchenk0 */
+/* you can choose any color you want. don't be afraid to experiment  */
+
+.form {
+  margin-top: 2rem;
+
+  @include m.tablet {
+    order: 1;
+    flex: 0;
+    margin: 5rem 0 2rem 6rem;
+  }
+
+  @include m.desktop {
+    margin: 15rem 0 10rem 40rem;
+  }
+
+  .input,
+  button {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    padding: 10px;
+    border: 0.1px solid #575cb5;
+  }
+
+  textarea.input {
+    padding: .5rem;
+    resize: none;
+    transition: height .3s ease;
+
+    &:focus {
+      height: 20rem;
+    }
+  }
+
+  // Añade estas reglas al final de tu archivo _form.scss
+
+  li:nth-child(4) {
+    &:focus-within {
+      &::before {
+        height: 20rem; // Altura igual al textarea
+      }
+    }
+  }
+
+
+
+
+  button {
+    background: #6d74e3;
+    border: none;
+  }
+
+  .wrapper {
+    position: relative;
+    margin-top: -5rem;
+
+    @include m.Jphone {
+      transform: skewY(-14deg) scale(1);
+    }
+
+    @include m.tablet {
+      transform: skewY(-14deg) scale(1.6);
+    }
+
+    @include m.desktop {
+      transform: skewY(-14deg) scale(2);
+    }
+  }
+
+  .wrapper li,
+  button {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    z-index: var(--i);
+    transition: 0.3s;
+    color: white;
+  }
+
+  .wrapper li::before,
+  button::before {
+    position: absolute;
+    content: '';
+    background: #6d74e3;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.3s;
+  }
+
+  .wrapper li::after,
+  button::after {
+    position: absolute;
+    content: '';
+    background: #6d74e3;
+    width: 200px;
+    height: 40px;
+    top: -40px;
+    left: 0;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.3s;
+  }
+
+  .wrapper li:nth-child(1)::after,
+  .wrapper li:nth-child(1)::before {
+    background-color: #d8daf7;
+  }
+
+  .wrapper li:nth-child(2)::after,
+  .wrapper li:nth-child(2)::before {
+    background-color: #c2c5f3;
+  }
+
+  .wrapper li:nth-child(3)::after,
+  .wrapper li:nth-child(3)::before {
+    background-color: #989deb;
+  }
+
+  .wrapper li:nth-child(4)::after,
+  .wrapper li:nth-child(4)::before {
+    background-color: #767de5;
+  }
+
+  li .input {
+    outline: none;
+    border: none;
+    color: black;
+  }
+
+  li .input::placeholder {
+    color: black;
+  }
+
+  li:nth-child(1) .input {
+    background: #d8daf7;
+  }
+
+  li:nth-child(2) .input {
+    background: #c2c5f3;
+  }
+
+  li:nth-child(3) .input {
+    background: #989deb;
+  }
+
+  li:nth-child(4) .input {
+    background: #767de5;
+  }
+
+  li:nth-child(1) .input:focus {
+    outline: none;
+    border: 3.5px solid #d8daf7;
+  }
+
+  li:nth-child(2) .input:focus {
+    outline: none;
+    border: 3.5px solid #c2c5f3;
+  }
+
+  li:nth-child(3) .input:focus {
+    outline: none;
+    border: 3.5px solid #989deb;
+  }
+
+  li:nth-child(4) .input:focus {
+    outline: none;
+    border: 3.5px solid #767de5;
+  }
+
+  .wrapper li:hover,
+  button:hover {
+    transform: translateX(-40px);
+  }
+
+  button:hover,
+  button:hover::before,
+  button:hover::after {
+    background: #575cb5;
+  }
+
+  button:active {
+    transform: translateX(0px);
+  }
+}
+
+
+
+
+// SVG
+
+.custom-shape-divider-bottom-1742183805 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1742183805 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1742183805 .shape-fill {
+  fill: #2a223a;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1742183805 svg {
+    width: calc(127% + 1.3px);
+    height: 197px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1742183805 svg {
+    width: calc(100% + 1.3px);
+    height: 80px;
+  }
+}

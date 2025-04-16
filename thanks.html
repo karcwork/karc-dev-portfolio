@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Sent | Karc Dev</title>
+    <link rel="stylesheet" href="build/css/app.css" />
+    <link rel="icon" href="src/img/logo/png/code.png" type="image/gif" sizes="16x16 32x32" />
+    <style>
+        main {
+            height: calc(100vh - 12rem);
+            /* Ajuste para dejar espacio al header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .thanks-container {
+            max-width: 80rem;
+        }
+
+        .thanks-footer {
+            margin-top: 4rem;
+            font-size: 1.6rem;
+        }
+
+        .thanks-footer a {
+            color: #ececb0;
+            text-decoration: underline;
+        }
+
+        .thanks-footer a:hover {
+            text-decoration: none;
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .thanks-container {
+            animation: fadeUp 1s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <a href="index.html">
+                <h1 style="margin-top: 3rem;" class="header__title">Karc<span>Dev</span></h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div style="margin-top: 20rem;" class="thanks-container">
+            <h2 style="font-size: 4rem; margin-bottom: 2rem;">Thank you for reaching out!</h2>
+            <p style="font-size: 2rem;">
+                Your message has been sent successfully. I'll get back to you as soon as possible.
+            </p>
+            <a href="index.html"
+                style="display: inline-block; margin-top: 4rem; font-size: 1.8rem; color: #ececb0; text-decoration: underline;">
+                ← Back to homepage
+            </a>
+
+            <div class="thanks-footer">
+                <hr style="margin: 3rem auto; max-width: 400px; border: 1px solid #ececb04d;" />
+                <p>
+                    Have any questions or concerns? Feel free to reach out at
+                    <a href="mailto:karcwork.outlook.com">karcwork.outlook.com</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="build/js/app.js"></script>
+</body>
+
+</html>

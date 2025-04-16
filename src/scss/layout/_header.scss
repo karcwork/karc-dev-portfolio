@@ -1,0 +1,277 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*
+.header {
+    idk
+}
+*/
+
+.header__content {
+    background-color: #0d0d0d1a;
+    backdrop-filter: blur(4px);
+    /*    grayscale(.8) brightness(0.3) blur(3px); */
+    /* Aplica el desenfoque detrás del header */
+    -webkit-backdrop-filter: blur(10px);
+    /* Para compatibilidad con Safari */
+    height: 12rem;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    @include m.desktop {
+        gap: 50rem;
+    }
+
+    @include m.tablet {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        border-bottom: .15rem dashed #1d1736;
+    }
+
+    a {
+        font-weight: 500;
+    }
+
+    label {
+        transition: filter .5s ease-in-out;
+    }
+
+
+    label:hover {
+
+        filter: hue-rotate(220deg) !important;
+
+        transform: scale(.52);
+    }
+}
+
+
+
+.main__nav {
+    z-index: 102;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    @include m.Jphone {
+        gap: 3rem;
+    }
+
+    @include m.tablet {
+        flex-direction: row;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a {
+        @include m.Jphone {
+            padding: 2rem 3rem;
+            text-transform: uppercase;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #ffffff80;
+            text-shadow: none;
+            background: transparent;
+            cursor: pointer;
+            box-shadow: transparent;
+            border: 1px solid #ffffff80;
+            transition: 0.5s ease;
+            user-select: none;
+
+
+            &:hover,
+            &:focus {
+                font-weight: 400;
+                color: #ffffff;
+                background: #00AAAA;
+                border: 1px solid #ececb0;
+                text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+                box-shadow: 0 0 5px #ececb0, 0 0 20px #ececb0, 0 0 50px #ececb0,
+                    0 0 100px #ececb0;
+            }
+
+            &:nth-child(1) {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+/* Nav Links Hover Animation */
+
+.main__nav a {
+    position: relative;
+    color: v.$white;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.main__nav a span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.main__nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ececb0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.main__nav a:hover,
+.active:not(:nth-of-type(3)) {
+    font-weight: 700;
+    color: #ececb0 !important;
+}
+
+.main__nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.main__nav a:hover span {
+    transform: translateY(-3px);
+}
+
+/* Efecto adicional de texto flotante (opcional) */
+
+.main__nav a span::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    color: v.$white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.main__nav a:hover span::after {
+    opacity: 0.7;
+}
+
+.main__nav {
+    transition: transform 0.3s ease-in-out;
+}
+
+.main__nav.visible {
+    transform: translateX(0);
+}
+
+.header__title {
+    text-align: center;
+    color: v.$white;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    transition: color .4s ease-in-out;
+
+    &:hover {
+        color: #e0e2f5;
+    }
+
+    @include m.tablet {
+        margin-top: 0;
+    }
+
+    span {
+        color: v.$span;
+    }
+}
+
+/* CSS para el efecto exacto */
+@include m.tablet {
+    .nav-link {
+        position: relative;
+        color: #ececb0;
+        text-decoration: none;
+        padding: 4px 0;
+        overflow: hidden;
+        transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        display: inline-block;
+    }
+
+    .nav-link::before {
+        content: attr(data-content);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgba(236, 236, 176, 0.4);
+        filter: blur(3px);
+        transform: translateY(120%) scaleY(0.8);
+        opacity: 0;
+        transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        pointer-events: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        transform: translateY(-5px);
+        color: #fff;
+    }
+
+    .nav-link:hover::before {
+        transform: translateY(35%) scaleY(0.9);
+        opacity: 1;
+        filter: blur(1.2px);
+    }
+}
+
+
+/* Subrayado dinámico */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
+// Nav for the Phone Icon
+.visible {
+    z-index: 101;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

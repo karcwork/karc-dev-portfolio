@@ -1,0 +1,127 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.proyects-section {
+    background-color: #1A1740;
+    padding-bottom: 20rem;
+
+    h3 {
+        padding-top: 7rem;
+        text-align: center;
+        font-size: 4.5rem;
+    }
+}
+
+.proyects-section__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyects {
+    @include m.grid(1, 2rem);
+
+    @include m.tablet {
+        @include m.grid(2, 3rem);
+    }
+
+    @include m.desktop {
+        @include m.grid(4, 4rem);
+    }
+}
+
+.proyect {
+    border: 5px solid #0d0a20;
+    width: auto;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: zoom-out;
+    transition: transform 1s ease-in-out;
+
+    &:hover {
+
+            transform: scale(1.1);
+
+        
+
+        @include m.desktop {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.proyect .proyect__image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.proyect .proyect__image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease-in-out;
+}
+
+.proyect::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.proyect:hover img {
+    filter: grayscale(.8) brightness(0.3) blur(3px);
+}
+
+.proyect:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.proyect__content {
+    z-index: 2;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    a {
+        cursor: zoom-in;
+    }
+}
+
+.proyect__content h4,
+.proyect__content p {
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+}
+
+.proyect__content h4 {
+    margin-bottom: 12px;
+    scale: 0.7;
+}
+
+.proyect__content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d1d1d1;
+    transform: translateY(50%);
+}
+
+.proyect:hover .proyect__content h4 {
+    scale: 1;
+    opacity: 1;
+}
+
+.proyect:hover .proyect__content P {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "proyecto-3.-portafolio-dev",
+  "version": "1.0.0",
+  "description": "Karc Dev Portfolio Page",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [
+    "Sass",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Karc Dev",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "glob": "^11.0.1",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.85.1",
+    "sharp": "^0.33.5"
+  }
+}
