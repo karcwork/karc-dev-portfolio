@@ -50,8 +50,8 @@ gulp build
 
 📷 Preview
 
-![Screenshot dark mode](src/img/preview-dark.png)  
-![Screenshot light mode](src/img/preview-light.png)
+![Screenshot dark mode](./src/img/preview-dark.png)
+![Screenshot light mode](./src/img/preview-light.png)
 
 📬 Contact
 If you'd like to collaborate or just connect:
